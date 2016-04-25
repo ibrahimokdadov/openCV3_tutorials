@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 from PIL import ImageGrab
 
-fourcc = cv2.VideoWriter_fourcc('X','V','I','D')
+fourcc = cv2.VideoWriter_fourcc('X','V','I','D') #you can use other codecs as well.
 vid = cv2.VideoWriter('record.avi', fourcc, 8, (500,490))
 while(True):
     img = ImageGrab.grab(bbox=(100, 10, 600, 500)) #x, y, w, h
