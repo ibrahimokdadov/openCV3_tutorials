@@ -11,7 +11,7 @@ print "--"*10
 print histogram
 print "--"*10
 print enumerate(histogram) #x,y
-blank = np.zeros((255,256))
+blank = np.zeros((255,256)) #black image aka blank 
 for x,y in enumerate(histogram):
     #print x,y
     cv2.line(blank, (x,0), (x,y), (255,255,255))
