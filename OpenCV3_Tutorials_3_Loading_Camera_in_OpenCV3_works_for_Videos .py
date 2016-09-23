@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cam = cv2.VideoCapture(1)
+cam = cv2.VideoCapture(1)  # Make sure you change to appropriate camera index; or use -1
 
 while(True):
     tf, frame = cam.read()
